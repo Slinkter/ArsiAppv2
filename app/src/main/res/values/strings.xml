@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">ARSIAPP</string>
     <string name="title_activity_bottom_nav">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="title_home">Inicio</string>
+    <string name="title_service">Servicios</string>
+    <string name="title_courses">Cursos</string>
+    <string name="title_location">Ubicanos</string>
+    <string name="title_contact">Contacto</string>
 </resources>

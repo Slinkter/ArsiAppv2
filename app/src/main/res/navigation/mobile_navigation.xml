@@ -7,19 +7,33 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.cudpast.arsiapp.Activities.Fragment.home.HomeFragment"
+        android:name="com.cudpast.arsiapp.Activities.Fragment.f1.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.cudpast.arsiapp.Activities.Fragment.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_services"
+        android:name="com.cudpast.arsiapp.Activities.Fragment.f2.ServicesFragment"
+        android:label="@string/title_service"
+        tools:layout="@layout/fragment_services" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.cudpast.arsiapp.Activities.Fragment.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_course"
+        android:name="com.cudpast.arsiapp.Activities.Fragment.f3.CoursesFragment"
+        android:label="@string/title_courses"
+        tools:layout="@layout/fragment_courses" />
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.cudpast.arsiapp.Activities.Fragment.f4.LocationFragment"
+        android:label="@string/title_location"
+        tools:layout="@layout/fragment_courses" />
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.cudpast.arsiapp.Activities.Fragment.f5.ContactFragment"
+        android:label="@string/title_contact"
+        tools:layout="@layout/fragment_courses" />
+
+
 </navigation>
