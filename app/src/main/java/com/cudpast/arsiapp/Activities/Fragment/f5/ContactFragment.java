@@ -16,8 +16,7 @@ public class ContactFragment  extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_contact, container, false);
-        final TextView textView = root.findViewById(R.id.text_contact);
-        textView.setText("hola desde 5");
+
         return root;
     }
 }

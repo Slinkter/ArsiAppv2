@@ -20,8 +20,7 @@ public class ServicesFragment extends Fragment {
 
 
         View root = inflater.inflate(R.layout.fragment_services, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        textView.setText("hola desde 2");
+
 
         return root;
     }

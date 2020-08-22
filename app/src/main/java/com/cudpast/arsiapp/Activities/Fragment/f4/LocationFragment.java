@@ -17,8 +17,7 @@ public class LocationFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_location, container, false);
-        final TextView textView = root.findViewById(R.id.text_location);
-        textView.setText("hola desde 4");
+
         return root;
     }
 }

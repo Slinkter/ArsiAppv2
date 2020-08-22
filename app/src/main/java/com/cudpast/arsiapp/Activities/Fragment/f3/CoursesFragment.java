@@ -20,8 +20,7 @@ public class CoursesFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,                             ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_courses, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        textView.setText("hola desde 3");
+
         return root;
     }
 }
