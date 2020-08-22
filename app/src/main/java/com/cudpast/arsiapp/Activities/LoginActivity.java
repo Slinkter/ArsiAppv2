@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.cudpast.arsiapp.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -30,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     public static final String TAG = LoginActivity.class.getSimpleName();
     private static final int RC_SIGN_IN = 9001;
 
+    LinearLayout   linerlayoutlogin ,linerlayoutprogressbar;
+
     FirebaseAuth firebaseAuth;
     FirebaseAuth.AuthStateListener authStateListener;
     GoogleSignInClient mGoogleSignInClient;
@@ -41,13 +44,20 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+        linerlayoutlogin = findViewById(R.id.linerlayoutlogin);
+        linerlayoutprogressbar = findViewById(R.id.linerlayoutprogressbar);
         //google sign
         btn_SignGooglee = (SignInButton) findViewById(R.id.btn_SignGooglee);
+        //
         btn_SignGooglee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                linerlayoutlogin.setVisibility(View.GONE);
+                linerlayoutprogressbar.setVisibility(View.VISIBLE);
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 startActivityForResult(signInIntent, RC_SIGN_IN);
+
             }
         });
 
@@ -96,6 +106,7 @@ public class LoginActivity extends AppCompatActivity {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 firebaseAuthWithGoogle(account.getIdToken());
+
                 //
                 Log.e(TAG, "===== account =====");
                 Log.e(TAG, "getId:" + account.getId());
@@ -112,6 +123,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void firebaseAuthWithGoogle(String idToken) {
 
+
+
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         firebaseAuth
                 .signInWithCredential(credential)
@@ -119,6 +132,9 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            //
+
+
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             Intent intent = new Intent(LoginActivity.this, BottomNavActivity.class);
@@ -127,6 +143,8 @@ public class LoginActivity extends AppCompatActivity {
                             Log.e(TAG, "signInWithCredential:success");
                         } else {
                             // If sign in fails, display a message to the user.
+                            linerlayoutlogin.setVisibility(View.VISIBLE);
+                            linerlayoutprogressbar.setVisibility(View.GONE);
                             Log.e(TAG, "signInWithCredential:failure", task.getException());
                         }
                     }
@@ -134,6 +152,8 @@ public class LoginActivity extends AppCompatActivity {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        linerlayoutlogin.setVisibility(View.VISIBLE);
+                        linerlayoutprogressbar.setVisibility(View.GONE);
                         Log.e(TAG, "addOnFailureListener : error " + e.getMessage());
                     }
                 });

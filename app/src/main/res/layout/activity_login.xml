@@ -10,218 +10,104 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="146dp"
-            android:layout_height="146dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
-            android:src="@drawable/logo"
-            app:civ_border_color="@color/colorGris"
-            app:civ_border_overlay="true"
-            app:civ_border_width="1dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif"
-            android:gravity="center"
-            android:text="CONSULTING ARSI"
-            android:textSize="@dimen/text_big"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="serif"
-            android:gravity="center"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="Consultoría en Administración \n de Riesgo y Servicios Integrales."
-            android:textSize="@dimen/text_medium" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="sans-serif-light"
-            android:text="Minería | Construcción Civil | Petróleo"
-            android:textSize="@dimen/text_small" />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/btn_SignGooglee"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="o"
-            android:textAllCaps="false"
-            android:textColor="@color/colorPrimaryDark"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/tv_iniciarusario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:gravity="center"
-            android:text="Iniciar con usuario"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/text_medium"
-            android:textStyle="italic|bold" />
-
-
         <LinearLayout
+            android:id="@+id/linerlayoutlogin"
+            android:visibility="visible"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="146dp"
+                android:layout_height="146dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="25dp"
-                android:orientation="vertical"
-                android:visibility="visible">
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/logo"
+                app:civ_border_color="@color/colorGris"
+                app:civ_border_overlay="true"
+                app:civ_border_width="1dp" />
 
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/log_email_layout"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Email"
-                    app:boxStrokeColor="@color/colorPrimary"
-                    app:counterTextColor="@color/colorPrimary"
-                    app:endIconMode="custom"
-                    app:errorEnabled="true"
-                    app:hintTextColor="@color/colorPrimary"
-                    app:startIconDrawable="@drawable/ic_email">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/log_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/log_password_layout"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:hint="Password"
-                    app:boxStrokeColor="@color/colorPrimary"
-                    app:endIconMode="password_toggle"
-                    app:errorEnabled="true"
-                    app:startIconDrawable="@drawable/ic_key">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/log_password"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        android:inputType="textPassword" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
-                android:orientation="vertical"
-                android:visibility="visible">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10sp"
-                    android:background="@color/colorPrimaryDark"
-                    android:onClick="btnLogin"
-                    android:text="Ingresar"
-                    android:textColor="@color/white" />
-
-                <Button
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="btnRegister"
-                    android:text="Registrarse" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="o"
-                    android:textAllCaps="false"
-                    android:textColor="@color/colorPrimaryDark" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
+                android:fontFamily="serif"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:text="CONSULTING ARSI"
+                android:textSize="@dimen/text_big"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_button_out_yellow"
-                    android:gravity="center"
-                    android:text="  "
-                    android:textAllCaps="false"
-                    android:textColor="#FFEA00" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Consultoría en Administración \n de Riesgo y Servicios Integrales."
+                android:textSize="@dimen/text_medium" />
 
-                <com.google.android.gms.common.SignInButton
-                    android:id="@+id/sign_in_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:visibility="gone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Minería | Construcción Civil | Petróleo"
+                android:textSize="@dimen/text_small" />
 
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_SignGooglee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp" />
 
-                <TextView
-                    android:id="@+id/txt_forgot_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="recuperar cuenta"
-                    android:textAllCaps="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="o"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="visible" />
 
-
-            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_iniciarusario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Iniciar con usuario"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="italic|bold" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/linerlayoutprogressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ProgressBar
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:progressDrawable="@drawable/progress_bar">
+
+            </ProgressBar>
+
+        </LinearLayout>
     </LinearLayout>
 
 
