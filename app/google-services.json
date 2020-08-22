@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "610535422615",
+    "firebase_url": "https://arsi-app-84a95.firebaseio.com",
+    "project_id": "arsi-app-84a95",
+    "storage_bucket": "arsi-app-84a95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610535422615:android:d31cd8a8d7488819cb07d2",
+        "android_client_info": {
+          "package_name": "com.cudpast.arsiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610535422615-fhf1h6jalvdhvc00l0p2rkn9931k7mcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cudpast.arsiapp",
+            "certificate_hash": "23f8707e8e338799b47b5dba1e9b4cba4054cb68"
+          }
+        },
+        {
+          "client_id": "610535422615-bggiml8bfgq69iu1stqesfhqccdt17ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXdvjRqaMYJZNJAI9CoEFacdkQeYfOylw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610535422615-bggiml8bfgq69iu1stqesfhqccdt17ni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
