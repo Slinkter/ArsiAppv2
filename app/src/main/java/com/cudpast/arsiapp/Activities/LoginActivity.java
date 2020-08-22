@@ -4,11 +4,27 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Vibrator;
+import android.text.Editable;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cudpast.arsiapp.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -19,12 +35,18 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -38,6 +60,29 @@ public class LoginActivity extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
 
     SignInButton btn_SignGooglee;
+
+
+    //
+    private Animation animation;
+    private Vibrator vib;
+    private ProgressDialog mDialog;
+    //
+
+    private TextInputEditText loginEmail, loginPassword;
+    //
+    CheckBox checkBox;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+    public static final String PREF_NAME = "prefs";
+    public static final String KEY_REMEMBER = "remeber";
+    public static final String KEY_USERNAME = "username";
+    public static final String KEY_PASS = "password";
+    private TextView txt_forgot_pwd;
+
+    //
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,4 +216,13 @@ public class LoginActivity extends AppCompatActivity {
         super.onStop();
         firebaseAuth.removeAuthStateListener(authStateListener);
     }
+
+
+
+
+
+
+
+
+
 }

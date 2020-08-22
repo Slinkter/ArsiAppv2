@@ -1,4 +1,4 @@
-package com.cudpast.arsiapp.Activities.ui.notifications;
+package com.cudpast.arsiapp.Activities.Fragment.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
