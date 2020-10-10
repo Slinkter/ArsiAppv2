@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:layout_margin="20dp"
         android:orientation="vertical">
 
 
@@ -26,7 +26,6 @@
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Cursos Premium"
-
                 android:textSize="@dimen/text_big"
                 android:textStyle="bold" />
 

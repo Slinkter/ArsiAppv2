@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Servicio.Servicio03">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="TERCERIZACIÓN DE PERSONAL"
+
+                    android:textSize="@dimen/text_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:text="Brindamos servicios tercerización, donde nos comprometemos a solucionar los problemas de gestión una parte integral de los procesos productivos, administrativos y de comercialización de su empresa, tales como administración de planillas, gestión de calidad de RR.HH, Bienestar social y outsourcing de la gestión integral de recursos humanos. \n"
+
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:clickable="true"
+                        android:elevation="8dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:text="Proceso "
+                                android:textSize="@dimen/text_large"
+                                android:textStyle="bold" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque01_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Selección de Personal"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Para trabajar con las personas en forma efectiva es necesario comprender el comportamiento humano y tener conocimientos sobre los diversos sistemas y prácticas disponibles que pueden ayudar a obtener una fuerza de trabajo diestra y motivada. Nosotros te ayudamos a elegir al personal adecuado para tu empresa a través de las siguientes técnicas . \n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_small" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque01_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Evaluación Psicolaboral"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Somos un equipo de profesionales proactivos, cuya finalidad es ayudar a tu empresa y sus trabajadores para que logren desarrollar su máximo potencial laboral, y así, ser una empresa más exitosa. \n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque01_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Administración de planillas"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Buscamos que su empresa optimice el tiempo de procesamiento y el acceso a nuevas tecnologías, con la garantía de nuestro servicio que le ofrece respaldo, privacidad y confidencialidad. \n "
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btnSgiPhone"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_smartphonebest"
+                    android:textColor="@color/colorWhite1"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/tdp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnSgiPhone"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Contacto \n Jefe de Recursos de Humanos"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

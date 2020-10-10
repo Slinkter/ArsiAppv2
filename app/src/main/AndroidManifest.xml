@@ -9,9 +9,12 @@
         android:roundIcon="@drawable/logomapmarker"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Servicio.Servicio03"></activity>
+        <activity android:name=".Activities.Servicio.Servicio02" />
+        <activity android:name=".Activities.Servicio.Servicio01" />
         <activity
             android:name=".Activities.BottomNavActivity"
-            android:label="@string/title_activity_bottom_nav"></activity>
+            android:label="@string/title_activity_bottom_nav" />
         <activity android:name=".Activities.LoginActivity" />
         <activity android:name=".Activities.SplashActivity">
             <intent-filter>

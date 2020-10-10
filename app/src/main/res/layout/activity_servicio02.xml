@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Servicio.Servicio02">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo3"
+                    android:visibility="gone" />
+
+                <TextView
+
+                    android:text="SISTEMA DE GESTIÓN INTEGRADO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+
+                    android:textSize="@dimen/text_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:gravity="center"
+                    android:text="Consulting ARSI desarrolla, implementa, brinda mantenimiento y mejora el Sistema de Gestión Integrado de su organización. \n "
+
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/c1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:elevation="8dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:text="Proceso"
+                                android:textSize="@dimen/text_large"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Diagnóstico"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Planificación del sistema"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Documentación"
+                                android:textColor="@color/white" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Formación del personal"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Implementación"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Seguimiento y Mejoras del Sistema"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Proceso de Certificación"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp"
+                                android:background="@drawable/bg_button_orange"
+                                android:gravity="center"
+                                android:padding="10sp"
+                                android:text="Mantenimiento y mejora del sistema"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:clickable="true"
+                        android:elevation="8dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:text="Ventajas "
+                                android:textSize="@dimen/text_large"
+                                android:textStyle="bold" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque02_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Certificación"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Estamos certificados por las empresas SGS Y Bureaus veritas para garantizar que la actividad a desarollar este bajo el más estricto cumplimiento legislativo.\n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque01_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Imagen"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Mejora la imagen de la organización ante la sociedad, al alinear a la organización con empresas líderes a nivel mundial.\n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque02_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cliente"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Potencia la búsqueda de la satisfacción del cliente y de los socios comerciales en el Perú aplicando metodologías de Consulting ARSI .\n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque01_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Eficacia"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="La eficacia del sistema de gestión garantiza el establecer en conjunto políticas, objetivos, programas, capacitación, control, monitoreo y revisión de manera conjunta y en forma eficiente.\n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque02_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Calidad"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Generar un énfasis en maximizar de la calidad del producto permitiendo ofrecer al mercado nacional una oferta con mayor valor agregado para su empresa..\n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="15dp"
+                                android:background="@color/bloque01_s2"
+                                app:cardBackgroundColor="@color/bloque01_s2"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sistema"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:gravity="center"
+                                        android:text="Permite la ejecución de un sistema único y, por lo tanto, un sistema más fácil de manejar, desarrollar y mantener en el mediano y largo plazo..\n"
+                                        android:textColor="@color/colorWhite_s2"
+                                        android:textSize="@dimen/text_medium" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:clickable="true"
+                        android:elevation="8dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:fontFamily="serif"
+                                android:gravity="center"
+                                android:text="NORMAS \n INTERNACIONALES"
+                                android:textSize="@dimen/text_large"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/imagecalidad"
+                                android:layout_width="170dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/isocalidad"
+                                android:onClick="ShowPopup" />
+
+                            <Button
+                                android:id="@+id/imagemedio"
+                                android:layout_width="160dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/isoambiente"
+                                android:onClick="ShowPopup2" />
+
+                            <Button
+                                android:layout_marginBottom="20dp"
+                                android:id="@+id/imageseguridad"
+                                android:layout_width="125dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/isoseguridad"
+                                android:onClick="ShowPopup3" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <Button
+                    android:elevation="8dp"
+                    android:id="@+id/btnSgiPhone"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_smartphonebest"
+                    android:textColor="@color/colorWhite1"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/sgit1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnSgiPhone"
+                    android:layout_gravity="center"
+                    android:text="Contacto\nJefe de SGI"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
