@@ -11,18 +11,26 @@ import androidx.fragment.app.Fragment;
 
 
 import com.cudpast.arsiapp.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeFragment extends Fragment {
 
-
+    FirebaseAuth firebaseAuth;
+    TextView username;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
+        username = root.findViewById(R.id.username);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        username.setText(firebaseAuth.getCurrentUser().getDisplayName());
+
+
         return root;
     }
-
 
 
 }

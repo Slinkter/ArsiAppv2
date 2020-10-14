@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.Servicio.Servicio03">
+    tools:context=".Services.Servicio03">
 
     <ScrollView
         android:layout_width="fill_parent"

@@ -5,17 +5,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 
-import com.cudpast.arsiapp.Activities.Servicio.Servicio01;
-import com.cudpast.arsiapp.Activities.Servicio.Servicio02;
-import com.cudpast.arsiapp.Activities.Servicio.Servicio03;
+import com.cudpast.arsiapp.Services.Servicio01;
+import com.cudpast.arsiapp.Services.Servicio02;
+import com.cudpast.arsiapp.Services.Servicio03;
 import com.cudpast.arsiapp.R;
 
 public class ServicesFragment extends Fragment {

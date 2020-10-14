@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cudpast.arsiapp">
 
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logomapmarker"
@@ -9,9 +17,29 @@
         android:roundIcon="@drawable/logomapmarker"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Servicio.Servicio03"></activity>
-        <activity android:name=".Activities.Servicio.Servicio02" />
-        <activity android:name=".Activities.Servicio.Servicio01" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Support.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".Activities.GalleryActivity" />
+        <activity android:name=".Course.curso03" />
+        <activity android:name=".Course.curso02" />
+        <activity android:name=".Course.curso01" />
+        <activity android:name=".Services.Servicio03" />
+        <activity android:name=".Services.Servicio02" />
+        <activity android:name=".Services.Servicio01" />
         <activity
             android:name=".Activities.BottomNavActivity"
             android:label="@string/title_activity_bottom_nav" />
