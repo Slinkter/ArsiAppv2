@@ -26,6 +26,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cudpast.arsiapp.Pojo.User;
 import com.cudpast.arsiapp.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -46,6 +47,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
@@ -53,13 +55,14 @@ public class LoginActivity extends AppCompatActivity {
     public static final String TAG = LoginActivity.class.getSimpleName();
     private static final int RC_SIGN_IN = 9001;
 
-    LinearLayout   linerlayoutlogin ,linerlayoutprogressbar;
+    LinearLayout linerlayoutlogin, linerlayoutprogressbar;
 
     FirebaseAuth firebaseAuth;
     FirebaseAuth.AuthStateListener authStateListener;
     GoogleSignInClient mGoogleSignInClient;
 
     SignInButton btn_SignGooglee;
+    FirebaseDatabase database;
 
 
     //
@@ -82,13 +85,12 @@ public class LoginActivity extends AppCompatActivity {
     //
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        database = FirebaseDatabase.getInstance();
 
         linerlayoutlogin = findViewById(R.id.linerlayoutlogin);
         linerlayoutprogressbar = findViewById(R.id.linerlayoutprogressbar);
@@ -122,6 +124,7 @@ public class LoginActivity extends AppCompatActivity {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null) {
                     Log.e(TAG, "firebaseAuth = " + firebaseUser.getEmail());
+
                 } else {
                     Log.e(TAG, "usuario cerro login");
                 }
@@ -157,6 +160,8 @@ public class LoginActivity extends AppCompatActivity {
                 Log.e(TAG, "getId:" + account.getId());
                 Log.e(TAG, "getEmail:" + account.getEmail());
                 Log.e(TAG, "getDisplayName:" + account.getDisplayName());
+
+
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Log.e(TAG, "Google sign in failed", e);
@@ -167,7 +172,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void firebaseAuthWithGoogle(String idToken) {
-
 
 
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
@@ -204,6 +208,33 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    private void saveUserInfo(FirebaseUser user) {
+
+        User usuario = new User();
+        usuario.setUid(user.getUid());
+        usuario.setName(user.getDisplayName());
+        usuario.setMail(user.getEmail());
+        usuario.setPhone(user.getPhoneNumber());
+
+        database.getReference()
+                .child("Clientes")
+                .child(user.getPhoneNumber().toString())
+                .setValue(usuario)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.e(TAG,"usuario registrado en la db firebase");
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.e(TAG," ERROR  db firebase = " + e.getMessage());
+                    }
+                });
+
+    }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -215,13 +246,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onStop();
         firebaseAuth.removeAuthStateListener(authStateListener);
     }
-
-
-
-
-
-
-
 
 
 }
