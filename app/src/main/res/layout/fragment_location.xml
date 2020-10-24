@@ -15,6 +15,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Ubicación"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,6 +31,8 @@
             android:elevation="8dp"
             app:cardCornerRadius="25dp"
             app:cardUseCompatPadding="true">
+
+
 
             <fragment
                 android:id="@+id/mapContacto"
