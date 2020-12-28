@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="60dp"
     tools:context=".Activities.Fragment.f3.CoursesFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical">
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -39,7 +41,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btnc1"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -67,13 +69,27 @@
                             android:layout_marginRight="8dp"
                             android:gravity="center"
                             android:text="Gestión de Seguridad y Salud Ocupacional"
+
+                            android:textSize="@dimen/text_large"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btnc2"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -102,6 +118,7 @@
                             android:layout_marginRight="8dp"
                             android:gravity="center"
                             android:text="Investigación de Accidentes e Incidentes"
+                            android:textSize="@dimen/text_large"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -118,7 +135,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btnc3"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -147,16 +164,69 @@
                             android:layout_marginRight="8dp"
                             android:gravity="center"
                             android:text="Seguridad Basada en el Comportamiento"
+                            android:textSize="@dimen/text_large"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
 
+
+
             </LinearLayout>
 
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:background="@drawable/p5"
+                            android:baselineAligned="false" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center"
+                            android:text="Seguridad Basada en el Comportamiento"
+                            android:textSize="@dimen/text_large"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

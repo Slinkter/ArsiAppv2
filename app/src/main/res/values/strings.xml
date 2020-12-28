@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ARSIAPP</string>
+    <string name="app_name">ARSI</string>
     <string name="title_activity_bottom_nav">MainActivity</string>
 
     <string name="title_home">Inicio</string>

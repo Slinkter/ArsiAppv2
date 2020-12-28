@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Services.Servicio03">
 
     <ScrollView
@@ -15,13 +14,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -41,21 +41,17 @@
 
                     android:gravity="center"
                     android:text="Brindamos servicios tercerización, donde nos comprometemos a solucionar los problemas de gestión una parte integral de los procesos productivos, administrativos y de comercialización de su empresa, tales como administración de planillas, gestión de calidad de RR.HH, Bienestar social y outsourcing de la gestión integral de recursos humanos. \n"
-
                     android:textSize="16dp" />
 
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:orientation="vertical"
-                android:paddingBottom="10dp">
+                android:orientation="vertical">
 
                 <LinearLayout
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -70,7 +66,7 @@
                         android:elevation="8dp"
                         android:foreground="?android:attr/selectableItemBackground"
                         app:cardCornerRadius="25dp"
-                        app:cardElevation="5dp">
+                        app:cardElevation="3dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -211,12 +207,14 @@
             </LinearLayout>
 
             <LinearLayout
+
+                android:background="@color/colorGris"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:visibility="gone">
 
                 <Button
                     android:id="@+id/btnSgiPhone"
