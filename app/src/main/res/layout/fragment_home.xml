@@ -45,23 +45,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="sans-serif-light"
             android:text="Minería | Construcción Civil | Petróleo"
             android:textSize="@dimen/text_small" />
-
 
 
         <TextView
             android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="sans-serif-light"
             android:text="username"
             android:textSize="@dimen/text_small" />
 
 
-
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Bievenid@"
+            android:textSize="@dimen/text_small" />
 
 
     </LinearLayout>

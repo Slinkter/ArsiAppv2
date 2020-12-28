@@ -4,19 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:layout_gravity="center"
+
+
     tools:context=".Activities.SplashActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="226dp"
-        android:layout_height="226dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp"
-        android:src="@drawable/logo"
-        app:civ_border_color="@color/colorPrimary"
-        app:civ_border_overlay="true"
-        app:civ_border_width="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="186dp"
+            android:layout_height="186dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="@color/colorGris"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CONSULTING \n ARSI"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </LinearLayout>
